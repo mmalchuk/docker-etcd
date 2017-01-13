@@ -10,6 +10,6 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repos
   && apk add runit
 
 # Copy in the filesystem - this contains confd, bird configs
-COPY filesystem /
+COPY root /
 
 CMD ["start_runit"]
